@@ -1,86 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uttam's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uttam | DevOps Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    color: #00f7ff;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #00f7ff, #00ff88);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00f7ff;
+}
+
+/* Card Style (3D Glass Effect) */
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* Skills */
+.skills span {
+    display: inline-block;
+    background: #00f7ff;
+    color: black;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+}
+</style>
+
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Uttam Behera</h1>
-        <p>DevOps Engineer | Cloud Enthusiast</p>
-        <hr>
-    </header>
+<!-- Navbar -->
+<nav>
+    <h2>Uttam</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-    <!-- About Section -->
-    <section>
-        <h2>About Me</h2>
+<!-- Hero -->
+<div class="hero">
+    <h1>Uttam Behera</h1>
+    <p>DevOps Engineer | Cloud | Automation</p>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
         <p>
-            I am a DevOps Engineer with 2+ years of experience in Data Center operations 
-            and hands-on experience in Docker, CI/CD, and cloud technologies.
+            DevOps Engineer with 2+ years of experience in Data Center operations.
+            Passionate about automation, cloud, and building scalable systems.
         </p>
-    </section>
+    </div>
+</section>
 
-    <hr>
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>GitHub Actions</span>
+        <span>AWS</span>
+        <span>Linux</span>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Docker</li>
-            <li>Kubernetes (Basics)</li>
-            <li>GitHub Actions</li>
-            <li>AWS (Basic)</li>
-            <li>Linux</li>
-        </ul>
-    </section>
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
 
-    <hr>
+    <div class="card">
+        <h3>CI/CD Pipeline</h3>
+        <p>Automated deployment using GitHub Actions.</p>
+    </div>
 
-    <!-- Projects Section -->
-    <section>
-        <h2>Projects</h2>
+    <div class="card">
+        <h3>Dockerized App</h3>
+        <p>Containerized and deployed application using Docker.</p>
+    </div>
 
-        <h3>1. CI/CD Pipeline</h3>
-        <p>Built a CI/CD pipeline using GitHub Actions for automated deployment.</p>
+    <div class="card">
+        <h3>Monitoring Setup</h3>
+        <p>Used Prometheus & Grafana for monitoring.</p>
+    </div>
+</section>
 
-        <h3>2. Dockerized App</h3>
-        <p>Containerized a web application using Docker and deployed locally.</p>
-
-        <h3>3. Monitoring Setup</h3>
-        <p>Implemented monitoring using Prometheus and Grafana.</p>
-
-    </section>
-
-    <hr>
-
-    <!-- Experience Section -->
-    <section>
-        <h2>Experience</h2>
-        <p>
-            Worked as a Data Center Engineer with 2 years of experience handling 
-            server infrastructure and troubleshooting.
-        </p>
-    </section>
-
-    <hr>
-
-    <!-- Contact Section -->
-    <section>
-        <h2>Contact</h2>
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
         <p>Email: uttam@example.com</p>
         <p>LinkedIn: linkedin.com/in/uttam</p>
         <p>GitHub: github.com/uttam</p>
-    </section>
+    </div>
+</section>
 
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Uttam Behera. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <p>© 2026 Uttam Behera | Built with ❤️</p>
+</footer>
 
 </body>
 </html>
