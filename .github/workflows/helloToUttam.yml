@@ -1,21 +1,16 @@
 name: Greeting Workflow
-
 on:
   push:
     branches:
       - main
-
 jobs:
   greet:
     runs-on: ubuntu-latest
-
     steps:
       - name: Say hello to Uttam
         run: echo "Hello Uttam"
-
-  details:
+  show-versions:
     runs-on: ubuntu-latest
     steps:
       - name: show whats the version of python and docker etc
         run: docker --version && python --version
-
