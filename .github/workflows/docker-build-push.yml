@@ -23,7 +23,7 @@ jobs:
 
     
             - name: Build & Push to Docker Hub
-              uses: Docker/build-push-actions@v6
+              uses: Docker/build-push-action@v6
               with:
                 context: .
                 push: true
